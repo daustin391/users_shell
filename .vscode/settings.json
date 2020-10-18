@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "/Users/daveaustin/Documents/CodingDojo/python_stack/my_environments/djangoPy3/bin/python3",
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "Dracula"
+}
