@@ -17,6 +17,9 @@ button {
     color: #f6fe63;
     box-shadow: 2px 2px #190029;
     cursor: pointer;
+    width: 50px;
+    height: 30px;
+    justify-self: center;
 }
 
 #forms {
@@ -32,15 +35,9 @@ button {
     overflow-x: scroll;
 }
 
-h2 { text-transform: capitalize; }
-
-form { padding-bottom: 25px; }
-
-
 table,
 button,
-span,
-form { border: 2px solid #190029; }
+span { border: 2px solid #190029; }
 
 th {
     background-color: #fec425;
@@ -51,11 +48,14 @@ tr:nth-child(even) { background-color: #e8caa9; }
 
 td { padding: .25em 3px; }
 
-
 td,
 th { border-right: 2px solid #190029; }
 
-table { border-collapse: collapse; }
+table { 
+    border-collapse: collapse; 
+    width: 80%;
+    margin: 0 auto;
+}
 
 span { 
     padding: 0 5px;
@@ -63,7 +63,7 @@ span {
     display: inline-block;
 }
 
-h1 {
+h2 {
     margin: .25em 0;
     font-weight: normal;
     text-align: center;
@@ -81,3 +81,19 @@ main {
 }
 
 th { text-align: start; }
+
+#users,
+form { height: 50%; }
+
+#users { border-bottom: 2px solid #190029; }
+
+form { 
+    display: grid;
+    grid-template-columns: repeat(2, 90px 150px);
+    grid-template-rows: repeat(3, auto) 1fr;
+    gap: .75rem;
+    margin: 0 auto;
+}
+
+form h2,
+button { grid-column: span 4; }
